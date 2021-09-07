@@ -1,0 +1,53 @@
+
+body {
+	background-image: url('img/background.jpg');
+	background-size: cover;
+	font-family: 'Anton', sans-serif;
+	font-size: 24px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#resultado{
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#jogo {
+	width: 618px;
+	height: 618px;
+	position: relative;
+	margin: auto;
+	border-radius: 25px;
+
+
+	background-color: var(--var-bg);
+}
+
+.casa {
+	/*background-image: url('img/0.jpg');*/
+	border: 3px solid #aaa;
+	border-radius: 15px;
+	width: 150px;
+	height: 150px;
+	float: left;
+	background-size: cover;
+	margin: 3px;
+}
+
+button{
+	padding: 10px;
+	background-color: rgb(132, 0, 255);
+	border-radius: 10px;
+}

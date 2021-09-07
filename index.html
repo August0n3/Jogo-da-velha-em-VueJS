@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jogo da Velha</title>
+	<link type="text/css" rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> 
+	
+</head>
+<body>
+	<div id="jogo">
+		<br>
+		<div id="resultado"><p>E a vez de: <span>{{vez}}</span> <br> 
+		<div id="conclusao">{{resultado}}</div> <br>
+		<div id="botao" v-if="botao == 1" >
+			<button @click="iniciar()" >Jogar novamente!!</button>
+		</div>
+		</div>
+		<div v-if="ganhar == 0">
+		<div id="linha1">
+			<div id="casa1" class="casa" @click="clique($event)"></div>
+			<div id="casa2" class="casa" @click="clique($event)"></div>
+			<div id="casa3" class="casa" @click="clique($event)"></div>
+		</div>
+		<div id="linha2">
+			<div id="casa4" class="casa" @click="clique($event)"></div>
+			<div id="casa5" class="casa" @click="clique($event)"></div>
+			<div id="casa6" class="casa" @click="clique($event)"></div>
+		</div>
+		<div id="linha3">
+			<div id="casa7" class="casa" @click="clique($event)"></div>
+			<div id="casa8" class="casa" @click="clique($event)"></div>
+			<div id="casa9" class="casa" @click="clique($event)"></div>
+		</div>
+	</div>
+	
+	</div>
+    <script type="text/javascript" src="jogo.js"></script>
+</body>
+</html>
