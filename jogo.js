@@ -47,7 +47,7 @@ new Vue({
 		}
 
   
-      //aleternar vez
+      //alternar vez
       if (this.jogador == 0){
           this.vez = 'X'
           this.jogador = 1
